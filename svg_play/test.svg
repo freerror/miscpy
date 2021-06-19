@@ -1,0 +1,6 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <line x1="79.4909" y1="80.4909" x2="81.4909" y2="82.4909" stroke="black" /><line x1="79.4909" y1="80.4909" x2="81.4909" y2="82.4909" stroke="black" /><line x1="35.2766" y1="36.2766" x2="37.2766" y2="38.2766" stroke="black" /><line x1="35.2766" y1="36.2766" x2="37.2766" y2="38.2766" stroke="black" /><line x1="16.7844" y1="17.7844" x2="18.7844" y2="19.7844" stroke="black" /><line x1="16.7844" y1="17.7844" x2="18.7844" y2="19.7844" stroke="black" /><line x1="59.4292" y1="60.4292" x2="61.4292" y2="62.4292" stroke="black" /><line x1="59.4292" y1="60.4292" x2="61.4292" y2="62.4292" stroke="black" />
+
+  <!-- If you do not specify the stroke
+       color the line will not be visible -->
+</svg>
