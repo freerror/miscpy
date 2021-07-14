@@ -1,0 +1,8 @@
+Wed Apr 28 23:15:37.968 UTC
+
+Interface                      IP-Address      Status          Protocol Vrf-Name
+MgmtEth0/RP0/CPU0/0            192.168.68.241  Up              Up       default 
+GigabitEthernet0/0/0/0         unassigned      Up              Up       default 
+GigabitEthernet0/0/0/1         unassigned      Shutdown        Down     default 
+GigabitEthernet0/0/0/2         unassigned      Up              Up       default 
+GigabitEthernet0/0/0/3         unassigned      Shutdown        Down     default 
