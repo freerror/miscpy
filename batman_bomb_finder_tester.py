@@ -21,16 +21,43 @@ def bomb_search(min_x, min_y, max_x, max_y, x0, y0, bomb_dir):
 
 
 def main():
-    w, h = [int(i) for i in input().split()]
-    n = int(input())
-    x0, y0 = [int(i) for i in input().split()]
-    min_x = min_y = 0
+    w, h, x0, y0 = 50, 50, 49, 49
+    xb, yb = 27, 27
+    min_x = 0
+    min_y = 0
     max_x = w - 1
     max_y = h - 1
 
+    def get_dir():
+        if xb == x0 and yb < y0:
+            return "U"
+        elif xb > x0 and yb < y0:
+            return "UR"
+        elif xb > x0 and yb == y0:
+            return "R"
+        elif xb > x0 and yb > y0:
+            return "DR"
+        elif xb == x0 and yb > y0:
+            return "D"
+        elif xb < x0 and yb > y0:
+            return "DL"
+        elif xb < x0 and yb == y0:
+            return "L"
+        elif xb < x0 and yb < y0:
+            return "UL"
+
+    i = 0
     while True:
-        min_x, min_y, max_x, max_y, x0, y0 = bomb_search(min_x, min_y, max_x, max_y, x0, y0, input())
+        new_dir = get_dir()
+        print(f"bomb is {new_dir}")
+        min_x, min_y, max_x, max_y, x0, y0 = bomb_search(min_x, min_y, max_x, max_y, x0, y0, new_dir)
+
         print(x0, y0)
+        if (x0, y0) == (xb, yb):
+            print(f"Found bomb after {i} iterations")
+            break
+        else:
+            i += 1
 
 
 if __name__ == "__main__":
