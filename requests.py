@@ -2,7 +2,7 @@ import requests
 from datetime import datetime
 import json
 
-# Note, this was a PowerBI streaming dataset
+# Note, this was a PowerBI streaming dataset which is removed
 endpoint = r"https://api.powerbi.com/beta/asdfasdfasdf"
 date = datetime.strftime(
     datetime.now(),
