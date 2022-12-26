@@ -1,11 +1,14 @@
 # Python3 Program for recursive binary search.
 # Returns index of x in arr if present, else -1
 
+
 def binary_search(arr, left, max_index, search_val):
     # Check base case
     if max_index >= left:
 
-        mid = left + (max_index - left) // 2  # // only returns the integer ammount
+        mid = (
+            left + (max_index - left) // 2
+        )  # // only returns the integer ammount
 
         # If element is present at the middle itself
         if arr[mid] == search_val:
@@ -14,12 +17,12 @@ def binary_search(arr, left, max_index, search_val):
         # If element is smaller than mid, then it
         # can only be present in left subarray
         elif arr[mid] > search_val:
-            return binarySearch(arr, left, mid - 1, search_val)
+            return binary_search(arr, left, mid - 1, search_val)
 
         # Else the element can only be present
         # in right subarray
         else:
-            return binarySearch(arr, mid + 1, max_index, search_val)
+            return binary_search(arr, mid + 1, max_index, search_val)
 
     else:
         # Element is not present in the array
